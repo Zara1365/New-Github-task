@@ -13,15 +13,15 @@ public Car(String brand,String model,int amountOfFuel){
      }
      
      public Car(){
-         this.brand = "";
-         this.model = "";
-         this.amountOfFuel = 0;
+         this.brand = "Kia";
+         this.model = "200";
+         this.amountOfFuel = 10;
      }
     public void brake(){
         System.out.println("Car is breaking");
     }
     public void accelerate(){
-        if(this.amountOfFuel > 0){
+        if(this.amountOfFuel >= 1){
             amountOfFuel--;
             System.out.println("Car is accelerating");
         }
